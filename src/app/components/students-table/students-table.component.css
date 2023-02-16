@@ -1,0 +1,33 @@
+*{
+    font-size: 12px;
+}
+
+.studentInactive{
+    color: red;
+    font-weight: bold
+}
+
+.studentActive{
+    color: green;
+    font-weight: bold;
+}
+
+
+.btnContainer{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding: 20px 40px 0 0  
+}
+
+
+.actionBtn{
+    background-color: transparent;
+    height: 100%;
+    border: none;
+}
+
+.actionIcon{
+    font-size: 20px;
+}
+
