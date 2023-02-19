@@ -73,7 +73,7 @@ export class AddModalComponent {
     newStudent = {
       id: this.addStudentForm.value.fileNumber + Math.random()*100,
       name: this.addStudentForm.value.name,
-      surname: this.addStudentForm.value.name,
+      surname: this.addStudentForm.value.surname,
       fileNumber: this.addStudentForm.value.fileNumber,
       age: this.addStudentForm.value.age,
       isActive: booleanValue,

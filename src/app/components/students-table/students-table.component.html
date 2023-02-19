@@ -1,3 +1,4 @@
+<h2>Estudiantes</h2>
 <table mat-table [dataSource]="dataSource">
     <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef appTitlesStyled>Estudiante</th>
@@ -61,13 +62,4 @@
 
 <div class="btnContainer">
     <button class="btn btn-success" (click)="openAddModal()">Añadir Estudiante</button>
-</div>
-
-<div class="row w-50">
-    <mat-form-field>
-        <mat-label>
-            Filtrar Estudiante
-        </mat-label>
-        <input type="text" name="" id="" matInput>
-    </mat-form-field>
 </div>

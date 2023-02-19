@@ -1,0 +1,25 @@
+<h2>Docentes</h2>
+
+<div class="row w-50">
+    <mat-form-field>
+        <mat-label>
+            Filtrar Docentes
+        </mat-label>
+        <input type="text" name="" id="" matInput [(ngModel)]="filter">
+    </mat-form-field>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let teacher of teachers$ | async">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{ teacher | completeName }}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src={{teacher.img}} alt="">
+                <mat-card-content>
+                    <p>Materia: {{ teacher.subject }}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

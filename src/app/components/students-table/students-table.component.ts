@@ -28,10 +28,14 @@ export class StudentsTableComponent implements OnInit{
   
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<Student>();
-    this.studentsService
+    this.suscription= this.studentsService
       .getStudents().subscribe((students : Student[])=>{
         this.dataSource.data = students;
       })
+  }
+
+  ngOnDestroy(): void {
+    this.suscription.unsubscribe();
   }
 
   deleteStudent(studentId : number){

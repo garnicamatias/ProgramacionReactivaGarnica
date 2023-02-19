@@ -1,9 +1,9 @@
 
-
 .sidenavContainer{
     min-height: calc(100vh - 90px);
     background-color:#00704e;
     padding-top: 0px;
+    height: 100%;
 }
 
 .mdc-list-item__primary-text {

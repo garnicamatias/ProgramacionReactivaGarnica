@@ -19,6 +19,8 @@ import { TitlesStyledDirective } from './directives/titles-styled.directive';
 import { StudentsService } from './services/students.service';
 import { EditModalComponent } from './components/edit-modal/edit-modal.component';
 import { StudentsFilterPipe } from './pipes/students-filter.pipe';
+import { TeachersListComponent } from './components/teachers-list/teachers-list.component';
+import { TeachersFilterPipe } from './pipes/teachers-filter.pipe';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { StudentsFilterPipe } from './pipes/students-filter.pipe';
     TitlesStyledDirective,
     EditModalComponent,
     StudentsFilterPipe,
+    TeachersListComponent,
+    TeachersFilterPipe,
   ],
   imports: [
     BrowserModule,

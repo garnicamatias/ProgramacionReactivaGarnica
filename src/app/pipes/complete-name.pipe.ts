@@ -6,8 +6,8 @@ import { Student } from '../models/student';
 })
 export class CompleteNamePipe implements PipeTransform {
 
-  transform(student: Student): string {
-    let completeName = `${student.surname}, ${student.name}`
+  transform(array: any): string {
+    let completeName = `${array.surname}, ${array.name}`
     return completeName;
   }
 
